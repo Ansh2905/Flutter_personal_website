@@ -56,7 +56,7 @@ class _contactFormState extends State<contactForm> {
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text('Submitting form!')));
+                      .showSnackBar(SnackBar(content: Text('Form submitted!')));
                 }
               },
               child: Text(

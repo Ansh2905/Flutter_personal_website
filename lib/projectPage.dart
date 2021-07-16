@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'projectView.dart';
 
 class projectPage extends StatelessWidget {
   @override
@@ -67,7 +68,11 @@ class projectTemplate extends StatelessWidget {
                         fontSize: 20,
                       )
                     ),
-                  onPressed: (){},
+                  onPressed: (){
+                      Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => projectView(name)),
+                      );
+                  },
                 ),
             ),
           ],
@@ -77,3 +82,4 @@ class projectTemplate extends StatelessWidget {
     );
   }
 }
+
